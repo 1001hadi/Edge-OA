@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Read Our Blog</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"> <i class="fas fa-book-open"></i>Egde</span
+          >Ledger AO
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#About">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+    <!-- About icon -->
+    <main>
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/blog/blog1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h3>Blog Post One</h3>
+              <p class="meta">
+                <i class="fas fa-user fa-2x"></i> Posted by
+                <strong> Ali Jafari</strong>| Apeil 18 2020
+              </p>
+              <p>
+                And now I'm coming stronger than ever You say I'm a fool I say
+                whatever I'm in it for the good vibes together And the love
+                lasts
+              </p>
+              <a href="post.html" class="btn btn-dark">
+                <i class="fas fa-chevron-right"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/blog/blog2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h3>Blog Post One</h3>
+              <p class="meta">
+                <i class="fas fa-user fa-2x"></i> Posted by
+                <strong> Omeed Jeff</strong>| Apeil 19 2020
+              </p>
+              <p>
+                Out of my way You can't get me down No time for the wicked If
+                you're in my line, I'ma go around the side, and still bring it
+                Sky is the limit
+              </p>
+              <a href="post.html" class="btn btn-light">
+                <i class="fas fa-chevron-right"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/blog/blog3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h3>Blog Post One</h3>
+              <p class="meta">
+                <i class="fas fa-user fa-2x"></i> Posted by
+                <strong> Fateme Jaf</strong>| Apeil 20 2020
+              </p>
+              <p>
+                No time for the wicked If you're in my line, I'ma go around the
+                side, and still bring it Sky is the limit
+              </p>
+              <a href="post.html" class="btn btn-dark">
+                <i class="fas fa-chevron-right"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!-- footer -->
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      </div>
+      <p>
+        Copyright &copy; 2020 <span class="text-primary"> Egde</span>Ledger AO
+      </p>
+    </footer>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
